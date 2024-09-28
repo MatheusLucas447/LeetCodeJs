@@ -1,12 +1,11 @@
-
-var createCounter = function(n) {
-    
+const createCounter = function(n) {
     return function() {
-        n++
-        return n
+        return n++
+        
     };
 };
 
 const counter = createCounter(10);
-console.log(counter())
-console.log(counter())
+counter();
+counter();
+counter();
